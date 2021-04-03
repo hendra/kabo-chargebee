@@ -2,15 +2,15 @@
 
 <p id="notice"><%= notice %></p>
 
-<%= form_tag('/subscriptions/update') do %>
+<%= form_tag('/subscriptions/update', method: :put) do %>
   <div class="field">
     <%= label_tag :chargebee_customer_id %>
-    <%= text_field_tag :chargebee_customer_id %>
+    <%= text_field_tag :chargebee_customer_id, '', required: true %>
   </div>
 
   <div class="field">
     <%= label_tag :date %>
-    <%= text_field_tag :date, '', { id: 'datepicker' } %>
+    <%= text_field_tag :date, '', { id: 'datepicker', required: true } %>
   </div>
 
   <div class="actions">
