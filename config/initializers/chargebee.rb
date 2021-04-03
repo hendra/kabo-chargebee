@@ -1,0 +1,1 @@
+ChargeBee.configure({:api_key => ENV['CHARGEBEE_API_KEY'], :site => ENV['CHARGEBEE_SITE']})

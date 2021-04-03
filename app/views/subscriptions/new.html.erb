@@ -1,0 +1,19 @@
+<h1>Chargebee Subscription</h1>
+
+<p id="notice"><%= notice %></p>
+
+<%= form_tag('/subscriptions/update') do %>
+  <div class="field">
+    <%= label_tag :chargebee_customer_id %>
+    <%= text_field_tag :chargebee_customer_id %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :date %>
+    <%= text_field_tag :date, '', { id: 'datepicker' } %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag 'Submit' %>
+  </div>
+<% end %>
